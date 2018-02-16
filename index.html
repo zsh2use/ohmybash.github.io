@@ -1,196 +1,276 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Oh My Bash</title>
-    <meta name="viewport" content="width=device-width">
-    <meta property="og:title" content="Oh My Bash">
-    <meta property="og:image" content="assets/img/OMBLogo_opengraph.png">
-    <meta property="og:site_name" content="Oh My Bash!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="ohmybash.github.io">
-    <meta property="og:description" content="Oh-My-Bash is an open source, community-driven framework for managing your BASH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... OH MY BASH!">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@ohmybash">
-    <meta name="twitter:creator" content="@nntoans">
-    <meta name="twitter:title" content="oh my bash">
-    <meta name="twitter:description" content="Oh-My-Bash is an open source, community-driven framework for managing your BASH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... OH MY BASH!">
-    <meta name="twitter:image" content="https://s3.amazonaws.com/ohmybash/OMBLogo_opengraph.jpg">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
-    <meta name="description" content="Oh-My-Bash is an open source, community-driven framework for managing your BASH configuration.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fancy.css">
-    <script type="text/javascript" src="https://use.typekit.net/iof2xms.js"></script>
-    <script type="text/javascript">try {Typekit.load();} catch (e) {}</script>
-</head>
-<body>
-<div class="container">
-    <div class="header clearfix mb40">
-        <div class="mobile-nav">
-            <div class="nav-trigger pull-right">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Oh My Zsh</title>
+        <meta name="viewport" content="width=device-width">
+        <meta property="og:title" content="Oh My Zsh">
+        <meta property="og:image" content="/img/OMZLogo_opengraph.png">
+        <meta property="og:site_name" content="Oh My Zsh!">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="ohmyz.sh">
+        <meta property="og:description" content="Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... OH MY ZSH!">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@ohmyzsh">
+        <meta name="twitter:creator" content="@robbyrussell">
+        <meta name="twitter:title" content="oh my zsh">
+        <meta name="twitter:description" content="Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout... OH MY ZSH!">
+        <meta name="twitter:image" content="https://s3.amazonaws.com/ohmyzsh/OMZLogo_opengraph.jpg">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="description" content="Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration.">
+
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/fancy.css">
+        <script type="text/javascript" src="//use.typekit.net/iof2xms.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <!--Google Analytics Snippet-->
+        <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-254228-17']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        </script>
+    </head>
+    <body>
+      <!--Facebook button-->
+      <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <!-- -->
+        <div class="container">
+          <div class="header clearfix mb40">
+            <div class="mobile-nav">
+              <div class="nav-trigger pull-right">
+              </div>
             </div>
-        </div>
-        <div class="github-banner">
-            <a href="https://github.com/ohmybash/oh-my-bash" target="_blank"><img
-                    style="position: absolute; top: 7px; right: 0; border: 0;" src="assets/img/github-fork-banner.png"
-                    alt="Fork Oh My Bash"></a>
-        </div>
-        <div class="logo pull-left">
-            <a href="/"><img src="assets/img/OMBLogo_BnW.png" alt="Oh My Bash logo!" width="120" height="120"></a>
-        </div>
-        <div class="nav pull-left">
-            <ul>
-                <li><a href="https://github.com/ohmybash/oh-my-bash/wiki" target="_blank">docs</a></li>
-                <li><a href="https://github.com/ohmybash/oh-my-bash/" target="_blank">code</a></li>
-                <li><a href="https://github.com/ohmybash/oh-my-bash/wiki/Themes" target="_blank">themes</a></li>
-                <li><a href="https://github.com/ohmybash/oh-my-bash/wiki/Contribution" target="_blank">contribution</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div>
-        <h3 class="text-center mb20">Your terminal never felt <span class="italic">this</span> good before.</h3>
-        <div class="mb20">
-            <ul class="terminal-slides">
-                <li><img src="assets/img/themes/nebirhos.jpg" alt="nebirhos" class="screenshots"></li>
-                <li><img src="assets/img/themes/daveverwer.jpg" alt="daveverwer" class="screenshots"></li>
-                <li><img src="assets/img/themes/af-magic.jpg" alt="af-magic" class="screenshots active"></li>
-                <li><img src="assets/img/themes/eastwood.jpg" alt="eastwood" class="screenshots"></li>
-                <li><img src="assets/img/themes/kolo.jpg" alt="kolo" class="screenshots"></li>
-                <li><img src="assets/img/themes/mh.jpg" alt="mh" class="screenshots"></li>
-            </ul>
-        </div>
-
-        <p class="mb20 light text-center">Oh-My-Bash is an open source, community-driven framework for managing your
-            BASH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few
-            things that make you shout... If you heard about Oh-My-Zsh before, this project is a shameless fork of that
-            one, but in "Bourne Again Shell".</p>
-
-        <h1 class="text-center mb40 bold">“Oh My BASH!”</h1>
-        <div class="wide mb20">
-            <div class="stats text-center">
-                <ul>
-                    <li>
-                      <h2 class="bold">4+</h2>
-                      <a href="https://github.com/ohmybash/oh-my-bash/tree/master/plugins" target="_blank">
-                        <h4>Plugins</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <h2 class="bold">&#x221e;</h2>
-                      <a href="https://github.com/ohmybash/oh-my-bash/graphs/contributors" target="_blank">
-                        <h4>Contributors</h4>
-                      </a>
-                    </li>
-                    <li><h2 class="bold">1+</h2>
-                      <a href="https://github.com/ohmybash/oh-my-bash/tree/master/themes/" target="_blank">
-                        <h4>Themes</h4>
-                      </a>
-                    </li>
-                </ul>
+            <div class="github-banner">
+              <a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank"><img style="position: absolute; top: 7px; right: 0; border: 0;" src="/img/github-fork-banner.png" alt="Fork Oh My Zsh"></a>
             </div>
-            <div class="clear"></div>
+            <div class="logo pull-left">
+                <a href="/"><img src="/img/OMZLogo_BnW.png" alt="Oh My ZSH logo!" width="200" height="120"></a>
+              </div>
+            <div class="nav pull-left">
+              <ul>
+                <li><a href="https://github.com/robbyrussell/oh-my-zsh/wiki" target="_blank">docs</a></li>
+                <li><a href="https://github.com/robbyrussell/oh-my-zsh/" target="_blank">code</a></li>
+                <li><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Themes" target="_blank">themes</a></li>
+                <li><a href="https://shop.planetargon.com/products/ohmyzsh-t-shirts" target="_blank">store</a></li>
+                
+                  <li><a href="/community/">community</a></li>
+                
+              </ul>
+            </div>
+
+
+          </div>
+
+
+          	<div>
+		<h3 class="text-center mb20">Your terminal never felt <span class="italic">this</span> good before.</h3>
+		<div class="mb20">
+			<ul class="terminal-slides">
+				<li><img src="/img/themes/nebirhos.jpg" alt="nebirhos" class="screenshots"></li>
+				<li><img src="/img/themes/daveverwer.jpg" alt="daveverwer" class="screenshots"></li>
+				<li><img src="/img/themes/af-magic.jpg" alt="af-magic" class="screenshots active"></li>
+				<li><img src="/img/themes/eastwood.jpg" alt="eastwood" class="screenshots"></li>
+				<li><img src="/img/themes/kolo.jpg" alt="kolo" class="screenshots"></li>
+				<li><img src="/img/themes/mh.jpg" alt="mh" class="screenshots"></li>
+			</ul>
+		</div>
+
+		<p class="mb20 light text-center">Oh-My-Zsh is an open source, community-driven framework for managing your ZSH configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout...</p>
+
+		<h1 class="text-center mb40 bold">“Oh My ZSH!”</h1>
+		<div class="wide mb20">
+			<div class="stats text-center">
+				<ul>
+					<li><h2 class="bold">200+</h2> <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins" target="_blank"><h4>Plugins</h4></a></li>
+					<li><h2 class="bold">1100+</h2> <a href="https://github.com/robbyrussell/oh-my-zsh/graphs/contributors" target="_blank"><h4>Contributors</h4></a></li>
+					<li><h2 class="bold">140+</h2> <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/themes/" target="_blank"><h4>Themes</h4></a></li>
+
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+			<div class="quotes-wrapper">
+				<h5 class="light green mb20 italic">Don't take our word for it, here's what some of our users are saying:</h5>
+				<div class="quote center">
+					<h3 class="bold mb10">“Oh-My-Zsh is probably one of the most fun open source projects to yell the name out loud.”</h3>
+					<a href="https://github.com/secondplanet" target="_blank">--secondplanet</a>
+				</div>
+        <div class="quote center">
+          <h3 class="bold mb10">“glad I stumbled on oh my zsh last night. don't have to keep managing my own git completion scripts.”</h3>
+          <a href="https://twitter.com/kmassada" target="_blank">--kmassada</a>
         </div>
+				<div class="quote center">
+					<h3 class="bold mb10">“My terminal is the happiest terminal on the whole earth since I have installed Zsh and Oh My Zsh!”</h3>
+					<a href="https://github.com/semahawk" target="_blank">--semahawk</a>
+				</div>
+				<div class="quote center">
+					<h3 class="bold mb10">“I just can't imagine not using oh-my-zsh. I can believe I won't have to mess around with <span class="courier-prime">.bashrc</span> again.”</h3>
+					<a href="https://github.com/davblayn" target="_blank">--davblayn</a>
+				</div>
+        <div class="quote center">
+          <h3 class="bold mb10">“zsh and oh my zsh is simply awesome and beautiful #zsh”</h3>
+          <a href="https://twitter.com/shivkanthb" target="_blank">--shivkanthb</a>
+        </div>
+				<div class="quote center">
+					<h3 class="bold mb10">“today i installed @ohmyzsh on my machine. after 10 minutes of use, i decided that there is no way back to bash!”</h3>
+					<a href="https://twitter.com/patbaumgartner/status/95954168531001344" target="_blank">--patbaumgartner</a>
+				</div>
+				<div class="quote center">
+					<h3 class="bold mb10">“oh-my-zsh is among the first things i install on any new machine I set up. It's as necessary as the shell itself.”</h3>
+					<a href="https://github.com/imeyer" target="_blank">--imeyer</a>
+				</div>
+				<div class="quote center">
+					<h3 class="bold mb10">“ZSH, by default, is a pain to setup. Thanks oh-my-zsh for hand-holding noobs into this wonderful shell!”</h3>
+					<a href="https://github.com/vikas-reddy" target="_blank">--vikas-reddy</a>
+				</div>
+        <div class="quote center">
+          <h3 class="bold mb10">“loving this combination of Terminator + Zsh + Oh My Zsh! + 'agnoster' theme with Powerline fonts :)”</h3>
+          <a href="https://twitter.com/erikaheidi" target="_blank">--erikaheidi</a>
+        </div>
+			</div>
 
-        <!--<div class="social text-center">
-            <iframe src="https://ghbtns.com/github-btn.html?user=ohmybash&repo=oh-my-bash&type=fork&count=true&size=large"
-                    allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
-            <iframe src="https://ghbtns.com/github-btn.html?user=ohmybash&repo=oh-my-bash&type=watch&count=true&size=large"
-                    allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
-            <a href="https://twitter.com/ohmybash" class="twitter-follow-button" data-show-count="true"
-               data-size="large">Follow @ohmybash</a>
-        </div>-->
+			<div class="social text-center">
+                 <iframe src="https://ghbtns.com/github-btn.html?user=robbyrussell&repo=oh-my-zsh&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+                 <iframe src="https://ghbtns.com/github-btn.html?user=robbyrussell&repo=oh-my-zsh&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
+                 <a href="https://twitter.com/ohmyzsh" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @ohmyzsh</a>
+ 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              	</div>
 
-        <div class="line mb60"></div>
+		<div class="line mb60"></div>
 
-        <h3 class="mb20 bold">Install oh-my-bash now</h3>
-        <ul class="install">
-            <li id="curl-tab" class="curl-tab active-tab light"><a href="#">Via curl</a></li>
-            <li id="wget-tab" class="light"><a href="#">Via wget</a></li>
-        </ul>
+		<h3 class="mb20 bold">Install oh-my-zsh now</h3>
+		<ul class="install">
+			<li id="curl-tab" class="curl-tab active-tab light"><a href="#">Via curl</a></li>
+			<li id="wget-tab" class="light"><a href="#">Via wget</a></li>
+		</ul>
+		<div class="wide">
+			<div class="curl">
+				<p class="code">$ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</p>
+			</div>
+			<div class="wget">
+				<p class="code">$ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"</p>
+			</div>
+		</div>
+
+		<div class="plugins">
+			<h5 class="light mb20">Some featured plugins:</h5>
+			<div class="plugin-container center">
+				<ul class="plugin-logos mb20">
+					<li><div class="git">git</div></li>
+					<li><div class="node">node.js</div></li>
+					<li><div class="postgres">postgreSQL</div></li>
+					<li><div class="ruby">ruby</div></li>
+					<li><div class="scala">scala</div></li>
+					<li><div class="sublime">sublime text 2</div></li>
+				</ul>
+				<ul class="plugin-logos mb10">
+					<li><div class="python">python</div></li>
+					<li><div class="rubyonrails">ruby on rails</div></li>
+					<li><div class="php">php</div></li>
+					<li><div class="osx">osx</div></li>
+					<li><div class="heroku">heroku</div></li>
+					<li><div class="django">django</div></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins" target="_blank"><p class="pull-right semi-bold">Check out our full plugin list →</p></a>
+		</div>
+		<div class="line mb60"></div>
+
+		<div class="wide">
+			<a href="http://shop.planetargon.com/products/ohmyzsh-t-shirts" target="_blank"><div class="shirt-container pull-left">
+					<img src="/img/shirt-computer.jpg" alt="Oh My Zsh Shirts">
+				</div></a>
+			<div class="ad-talk pull-left">
+				<a href="http://shop.planetargon.com/products/ohmyzsh-t-shirts" target="_blank"><h2 class="bold">T-shirts, stickers, and mugs!</h2></a>
+				<h6 class="light mb10">Check out the store and show off Oh My ZSH to your friends.</h6>
+				<a href="http://shop.planetargon.com/products/ohmyzsh-t-shirts" target="_blank"><p class="semi-bold pull-right">Check out the swag →</p></a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="arrow mb20 light">This could be you!</div>
+	</div>
+
         <div class="wide">
-            <div class="curl">
-                <p class="code">$ sh -c "$(curl -fsSL https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh)"</p>
+            <div class="footer text-center">
+              <p>©2009 - 2018 <a href="https://www.planetargon.com/robby" target="_blank">Robby Russell</a> & Contributors</p>
+              <p class="mb10">An open source <span class="va-middle mr3"><img src="/img/pa-symbol-white.png" alt="Planet Argon Logo"></span><a class="semi-bold" href="http://planetargon.com">Planet Argon</a> project under the terms of the <a class="semi-bold" href="https://github.com/robbyrussell/oh-my-zsh/blob/master/MIT-LICENSE.txt">MIT License</a></p>
+              <p class="small mb10">Planet Argon is a <a href="http://www.planetargon.com/skills/ruby-on-rails-development" target="_blank">Ruby on Rails consulting company</a> in Portland, Oregon USA.</p>
+              <div class="social-footer">
+                <iframe src="http://ghbtns.com/github-btn.html?user=robbyrussell&repo=oh-my-zsh&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=robbyrussell&repo=oh-my-zsh&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+                <a href="https://twitter.com/ohmyzsh" class="twitter-follow-button" data-show-count="true">Follow @ohmyzsh</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <div class="fb-like" data-href="https://www.facebook.com/pages/Oh-My-Zsh/296616263819290" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                <div class="createsend-button" style="height:22px;display:inline-block;" data-listid="y/39/3FD/31C/4BF1B37EF02E84EB">
+                </div><script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=2'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+              </div>
             </div>
-            <div class="wget">
-                <p class="code">$ sh -c "$(wget https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"</p>
-            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div id="modal" class="modal hide">
+          <form action="https://planetargon.createsend.com/t/y/s/qtdtly/" method="post" id="subForm">
+            <a class="close" href="javascript://" data-dismiss="modal">×</a>
+            <h1>Sign up for our newsletter</h1>
+            <input type="text" name="cm-name" placeholder="Your name" required>
+            <input type="email" spellcheck="false" name="cm-qtdtly-qtdtly" id="email" placeholder="and your email" required>
+            <button type="submit" value="Subscribe">Subscribe</button>
+            <div id="response"><strong>Success!</strong> You're subscribed</div>
+          </form>
         </div>
 
-        <div class="plugins">
-            <h5 class="light mb20">Some featured plugins:</h5>
-            <div class="plugin-container center">
-                <ul class="plugin-logos mb20">
-                    <li>
-                        <div class="git">git</div>
-                    </li>
-                    <li>
-                        <div class="node">node.js</div>
-                    </li>
-                    <li>
-                        <div class="postgres">postgreSQL</div>
-                    </li>
-                    <li>
-                        <div class="ruby">ruby</div>
-                    </li>
-                    <li>
-                        <div class="scala">scala</div>
-                    </li>
-                    <li>
-                        <div class="sublime">sublime text 2</div>
-                    </li>
-                </ul>
-                <ul class="plugin-logos mb10">
-                    <li>
-                        <div class="python">python</div>
-                    </li>
-                    <li>
-                        <div class="rubyonrails">ruby on rails</div>
-                    </li>
-                    <li>
-                        <div class="php">php</div>
-                    </li>
-                    <li>
-                        <div class="osx">osx</div>
-                    </li>
-                    <li>
-                        <div class="heroku">heroku</div>
-                    </li>
-                    <li>
-                        <div class="django">django</div>
-                    </li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-            <a href="https://github.com/ohmybash/oh-my-bash/wiki/Plugins" target="_blank">
-                <p class="pull-right semi-bold">Check out our full plugin list →</p>
-            </a>
-        </div>
-        <div class="line mb60"></div>
-    </div>
-
-    <div class="wide">
-        <div class="footer text-center">
-            <p>©2016 - 2017 <a href="https://nntoan.github.io" target="_blank">Toan Nguyen</a> &amp; Contributors</p>
-            <p class="mb10">An open source <a class="semi-bold" href="https://nntoan.github.io">Toan Nguyen</a>
-                project under the terms of the <a class="semi-bold" href="https://github.com/ohmybash/oh-my-bash/blob/master/LICENSE.txt">WTFPL
-                License</a></p>
-            <div class="social-footer">
-                <iframe src="http://ghbtns.com/github-btn.html?user=ohmybash&repo=oh-my-bash&type=fork&count=true"
-                        allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-                <iframe src="http://ghbtns.com/github-btn.html?user=ohmybash&repo=oh-my-bash&type=watch&count=true"
-                        allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-                <!--<a href="https://twitter.com/ohmybash" class="twitter-follow-button" data-show-count="true">Follow
-                    @ohmybasher</a>-->
-            </div>
-        </div>
-    </div>
-</div>
-<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="assets/js/responsiveslides.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.quovolver.js" type="text/javascript"></script>
-<script src="assets/js/modal.js"></script>
-<script src="assets/js/script.js" type="text/javascript"></script>
-</body>
+    <script type="text/javascript">
+      adroll_adv_id = "WULMPY2EEBE23N5MXTTUML";
+      adroll_pix_id = "TPEFDKD7UZD7FKLP6UG6BN";
+      (function () {
+      var oldonload = window.onload;
+      window.onload = function(){
+         __adroll_loaded=true;
+         var scr = document.createElement("script");
+         var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+         scr.setAttribute('async', 'true');
+         scr.type = "text/javascript";
+         scr.src = host + "/j/roundtrip.js";
+         ((document.getElementsByTagName('head') || [null])[0] ||
+          document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+         if(oldonload){oldonload()}};
+      }());
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="/js/responsiveslides.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.quovolver.js" type="text/javascript"></script>
+    <script src="/js/modal.js"></script>
+    <script type="text/javascript">
+    $(function () {
+      $('#subForm').submit(function (e) {
+        e.preventDefault();
+        $('#email').removeClass();
+        $('button').fadeTo(200,0.5);
+        $.getJSON(
+        this.action + "?callback=?",
+        $(this).serialize(),
+        function (data) {
+          $('button').stop().fadeTo(200,1);
+          if (data.Status === 400) { $('#email').addClass('error'); } else { $('#response').show(); }
+        });
+      });
+    });
+    </script>
+    <script src="/js/script.js" type="text/javascript"></script>
+    </body>
 </html>
